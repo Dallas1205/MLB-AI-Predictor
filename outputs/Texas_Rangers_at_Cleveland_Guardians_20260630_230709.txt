@@ -1,0 +1,106 @@
+
+════════════════════════════════════════
+MLB AI Predictor Report
+════════════════════════════════════════
+
+Game
+-------------------------
+Texas Rangers @ Cleveland Guardians
+Game Time: 2026-06-30T22:40:00Z
+Venue: Progressive Field
+Status: Final
+
+Pitchers
+-------------------------
+Away: Jacob deGrom
+Home: Tanner Bibee
+
+Prediction
+-------------------------
+Winner: Cleveland Guardians
+Away Win Probability: 45.8%
+Home Win Probability: 54.2%
+Projected Score: Texas Rangers 5.67 - Cleveland Guardians 6.08
+Projected Total: 11.76
+Prediction Engine: Statcast PA model with calibrated cached matchups
+
+Fair Betting Lines
+------------------
+Cleveland Guardians: -118
+Texas Rangers: 118
+
+Weather
+-------------------------
+Temp: 91.8 F
+Wind: 10.0 mph unknown
+Source: Open-Meteo
+
+Park Factor
+-------------------------
+Run Factor: 1.0
+Source: manual starter table
+
+Lineup Status
+-------------------------
+confirmed
+
+Texas Rangers Lineup
+1. Joc Pederson
+2. Josh Jung
+3. Cam Cauley
+4. Jake Burger
+5. Ezequiel Duran
+6. Evan Carter
+7. Alejandro Osuna
+8. Elias Díaz
+9. Nicky Lopez
+
+Cleveland Guardians Lineup
+1. Travis Bazzana
+2. Chase DeLauter
+3. Brayan Rocchio
+4. David Fry
+5. Cooper Ingle
+6. Daniel Schneemann
+7. Gabriel Arias
+8. Patrick Bailey
+9. Steven Kwan
+
+Injury / Status Notes
+-------------------------
+Texas Rangers: Carter Baumler - Injured 60-Day
+Texas Rangers: Chris Martin - Injured 15-Day
+Texas Rangers: Cody Bradford - Injured 60-Day
+Texas Rangers: Cody Freeman - Injured 10-Day
+Texas Rangers: Danny Jansen - Injured 10-Day
+Texas Rangers: Jack Leiter - Injured 15-Day
+Texas Rangers: Jalen Beeks - Injured 10-Day
+Texas Rangers: Jordan Montgomery - Injured 60-Day
+Texas Rangers: Michael Helman - Injured 60-Day
+Texas Rangers: Robert Garcia - Injured 60-Day
+Texas Rangers: Wyatt Langford - Injured 10-Day
+Cleveland Guardians: Angel Martínez - Injured 10-Day
+Cleveland Guardians: José Ramírez - Injured 10-Day
+
+Data Quality
+-------------------------
+Score: 100/100
+- Using neutral/default park factor
+
+Prediction Confidence
+---------------------
+Score: 100/100
+Grade: A
+
+Why score is lower:
+- Using neutral/default park factor
+
+
+Why This Prediction Happened
+----------------------------
+- Cleveland Guardians is favored by the simulation.
+- Home starter confirmed: Tanner Bibee.
+- Away starter confirmed: Jacob deGrom.
+- Stadium is close to neutral.
+- Weather data is included.
+

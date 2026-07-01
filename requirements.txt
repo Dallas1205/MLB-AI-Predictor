@@ -1,0 +1,7 @@
+pybaseball
+pandas
+numpy
+scikit-learn
+requests
+joblib
+tqdm
