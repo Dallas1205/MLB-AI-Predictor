@@ -1,0 +1,127 @@
+
+════════════════════════════════════════
+MLB AI Predictor Report
+════════════════════════════════════════
+
+Game
+-------------------------
+Washington Nationals @ Athletics
+Game Time: 2026-07-19T02:05:00Z
+Venue: Sutter Health Park
+Status: Scheduled
+
+Pitchers
+-------------------------
+Away: Zack Littell
+Home: J.T. Ginn
+
+Prediction
+-------------------------
+Winner: Washington Nationals
+Away Win Probability: 53.0%
+Home Win Probability: 47.0%
+Projected Score: Washington Nationals 3.62 - Athletics 3.61
+Projected Total: 7.22
+Prediction Engine: Statcast PA model with calibrated cached matchups
+
+Fair Betting Lines
+------------------
+Athletics: 113
+Washington Nationals: -113
+
+Weather
+-------------------------
+Temp: 85.8 F
+Wind: 10.2 mph unknown
+Source: Open-Meteo
+
+Park Factor
+-------------------------
+Run Factor: 1.0
+Source: manual starter table
+
+Lineup Status
+-------------------------
+not posted yet - showing active roster hitters as fallback
+
+Washington Nationals Lineup
+Official lineup not posted yet.
+
+Active roster hitters fallback:
+1. Andrés Chaparro - 1B - Bats R
+2. CJ Abrams - SS - Bats L
+3. Curtis Mead - 3B - Bats R
+4. Daylen Lile - LF - Bats L
+5. Dylan Crews - RF - Bats R
+6. Harry Ford - C - Bats R
+7. Jacob Young - CF - Bats R
+8. James Wood - RF - Bats L
+9. Jorbit Vivas - 3B - Bats L
+10. José Tena - DH - Bats L
+11. Keibert Ruiz - C - Bats S
+12. Luis García Jr. - 1B - Bats L
+13. Nasim Nuñez - 2B - Bats S
+
+Athletics Lineup
+Official lineup not posted yet.
+
+Active roster hitters fallback:
+1. Alika Williams - SS - Bats R
+2. Carlos Cortes - RF - Bats L
+3. Colby Thomas - RF - Bats R
+4. Donovan Walton - 3B - Bats L
+5. Henry Bolte - CF - Bats R
+6. Jacob Wilson - SS - Bats R
+7. Jeff McNeil - 2B - Bats L
+8. Jonah Heim - C - Bats S
+9. Joshua Kuroda-Grauer - 3B - Bats R
+10. Lawrence Butler - RF - Bats L
+11. Shea Langeliers - C - Bats R
+12. Tommy White - 3B - Bats R
+13. Tyler Soderstrom - LF - Bats L
+
+Injury / Status Notes
+-------------------------
+Washington Nationals: Brad Lord - Injured 15-Day
+Washington Nationals: DJ Herz - Injured 60-Day
+Washington Nationals: Drew Millas - Injured 10-Day
+Washington Nationals: Jake Irvin - Injured 60-Day
+Washington Nationals: Josiah Gray - Injured 60-Day
+Washington Nationals: Ken Waldichuk - Injured 60-Day
+Washington Nationals: Miles Mikolas - Suspended # days
+Washington Nationals: Mitchell Parker - Injured 60-Day
+Washington Nationals: Richard Lovelady - Injured 15-Day
+Washington Nationals: Trevor Williams - Injured 60-Day
+Athletics: Brent Rooker - Injured 60-Day
+Athletics: Brooks Kriske - Injured 60-Day
+Athletics: Denzel Clarke - Injured 60-Day
+Athletics: Gunnar Hoglund - Injured 60-Day
+Athletics: Luis Severino - Injured 60-Day
+Athletics: Nick Kurtz - Injured 10-Day
+Athletics: Zack Gelof - Injured 10-Day
+
+Data Quality
+-------------------------
+Score: 75/100
+- Lineups are not fully confirmed
+- Using neutral/default park factor
+
+Prediction Confidence
+---------------------
+Score: 75/100
+Grade: C
+
+Why score is lower:
+- Lineups are not fully confirmed
+- Using neutral/default park factor
+
+
+Why This Prediction Happened
+----------------------------
+- Washington Nationals is favored by the simulation.
+- Home starter confirmed: J.T. Ginn.
+- Away starter confirmed: Zack Littell.
+- Stadium is close to neutral.
+- Weather data is included.
+- Data quality issues reduce confidence.
+

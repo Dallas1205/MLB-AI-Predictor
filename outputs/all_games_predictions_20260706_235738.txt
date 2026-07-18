@@ -1,0 +1,147 @@
+MLB PREDICTIONS
+===============
+
+--------------------------------------------------
+Pittsburgh Pirates @ Philadelphia Phillies
+Status: Final
+Venue: Citizens Bank Park
+
+Predicted Winner: Pittsburgh Pirates
+Pittsburgh Pirates Win %: 53.9% | Fair Line: -117
+Philadelphia Phillies Win %: 46.1% | Fair Line: 117
+
+Projected Score: Pittsburgh Pirates 6.75 - Philadelphia Phillies 6.27
+Projected Total: 13.01
+
+Weather: 70.6°F, wind 11.3 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Cincinnati Reds @ Milwaukee Brewers
+Status: Final
+Venue: American Family Field
+
+Predicted Winner: Cincinnati Reds
+Cincinnati Reds Win %: 51.2% | Fair Line: -105
+Milwaukee Brewers Win %: 48.8% | Fair Line: 105
+
+Projected Score: Cincinnati Reds 6.34 - Milwaukee Brewers 6.31
+Projected Total: 12.65
+
+Weather: 75.8°F, wind 5.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Miami Marlins @ Colorado Rockies
+Status: Final
+Venue: Coors Field
+
+Predicted Winner: Colorado Rockies
+Miami Marlins Win %: 45.3% | Fair Line: 121
+Colorado Rockies Win %: 54.7% | Fair Line: -121
+
+Projected Score: Miami Marlins 5.98 - Colorado Rockies 6.62
+Projected Total: 12.6
+
+Weather: 91.4°F, wind 6.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Chicago White Sox @ Cleveland Guardians
+Status: Final
+Venue: Progressive Field
+
+Predicted Winner: Cleveland Guardians
+Chicago White Sox Win %: 49.0% | Fair Line: 104
+Cleveland Guardians Win %: 51.0% | Fair Line: -104
+
+Projected Score: Chicago White Sox 6.59 - Cleveland Guardians 6.59
+Projected Total: 13.18
+
+Weather: 74.0°F, wind 8.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+St. Louis Cardinals @ Atlanta Braves
+Status: Final
+Venue: Truist Park
+
+Predicted Winner: St. Louis Cardinals
+St. Louis Cardinals Win %: 53.8% | Fair Line: -116
+Atlanta Braves Win %: 46.2% | Fair Line: 116
+
+Projected Score: St. Louis Cardinals 6.38 - Atlanta Braves 6.09
+Projected Total: 12.47
+
+Weather: 81.8°F, wind 3.3 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Tampa Bay Rays @ Kansas City Royals
+Status: Final
+Venue: Kauffman Stadium
+
+Predicted Winner: Tampa Bay Rays
+Tampa Bay Rays Win %: 53.0% | Fair Line: -113
+Kansas City Royals Win %: 47.0% | Fair Line: 113
+
+Projected Score: Tampa Bay Rays 6.33 - Kansas City Royals 6.02
+Projected Total: 12.35
+
+Weather: 86.6°F, wind 7.2 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Detroit Tigers @ Texas Rangers
+Status: Final
+Venue: Globe Life Field
+
+Predicted Winner: Detroit Tigers
+Detroit Tigers Win %: 51.8% | Fair Line: -107
+Texas Rangers Win %: 48.2% | Fair Line: 107
+
+Projected Score: Detroit Tigers 6.31 - Texas Rangers 6.28
+Projected Total: 12.59
+
+Weather: 96.0°F, wind 7.7 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Los Angeles Angels @ Seattle Mariners
+Status: Final
+Venue: T-Mobile Park
+
+Predicted Winner: Los Angeles Angels
+Los Angeles Angels Win %: 51.9% | Fair Line: -108
+Seattle Mariners Win %: 48.1% | Fair Line: 108
+
+Projected Score: Los Angeles Angels 6.11 - Seattle Mariners 5.9
+Projected Total: 12.01
+
+Weather: 82.3°F, wind 6.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+San Diego Padres @ Los Angeles Dodgers
+Status: Final
+Venue: UNIQLO Field at Dodger Stadium
+
+Predicted Winner: Los Angeles Dodgers
+San Diego Padres Win %: 43.6% | Fair Line: 129
+Los Angeles Dodgers Win %: 56.4% | Fair Line: -129
+
+Projected Score: San Diego Padres 5.68 - Los Angeles Dodgers 6.36
+Projected Total: 12.04
+
+Weather: 72°F, wind 0 mph none
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+

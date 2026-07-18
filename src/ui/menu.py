@@ -1,25 +1,49 @@
 from pathlib import Path
 
-from src.api.schedule import get_todays_games
+from src.api.schedule import (
+    get_todays_games,
+    get_tomorrows_games,
+    get_yesterdays_games,
+    get_games,
+    get_games_in_range,
+)
 from src.api.lineups import get_game_lineups
 from src.api.injuries import get_team_roster_status
 from src.api.weather import get_weather_for_game
 from src.api.park_factors import get_park_factor
 
-from src.reports.data_quality import calculate_data_quality_score
-from src.reports.game_report import build_game_report, save_game_report
+from src.reports.data_quality import (
+    calculate_data_quality_score,
+)
+from src.reports.game_report import (
+    build_game_report,
+    save_game_report,
+)
 
-from src.simulation.game import run_basic_game_simulation
-from src.simulation.model_game import run_model_game_simulation
+from src.simulation.game import (
+    run_basic_game_simulation,
+)
+from src.simulation.model_game import (
+    run_model_game_simulation,
+)
 
 from src.prediction.model_loader import load_pa_model
+
+from src.ui.progress import progress_bar, step
+
+from src.analytics.team_form import (
+    get_recent_team_form,
+)
+from src.analytics.projection_blend import (
+    blend_projection,
+)
 
 
 def print_header():
     print("\n╔════════════════════════════════════════╗")
     print("║            MLB AI Predictor            ║")
     print("╠════════════════════════════════════════╣")
-    print("║ 1. Predict All Today's Games           ║")
+    print("║ 1. Predict All Games                   ║")
     print("║ 2. Predict One Game                    ║")
     print("║ 3. Custom Matchup                      ║")
     print("║ 4. Train Models                        ║")
@@ -29,18 +53,92 @@ def print_header():
     print("╚════════════════════════════════════════╝")
 
 
-def moneyline(prob):
-    prob = max(0.001, min(prob, 0.999))
+def moneyline(probability):
+    probability = max(
+        0.001,
+        min(probability, 0.999),
+    )
 
-    if prob >= 0.5:
-        return round(-100 * prob / (1 - prob))
+    if probability >= 0.5:
+        return round(
+            -100
+            * probability
+            / (1 - probability)
+        )
 
-    return round(100 * (1 - prob) / prob)
+    return round(
+        100
+        * (1 - probability)
+        / probability
+    )
 
 
-def run_prediction_for_game(game, n_sims=1000, print_steps=True):
+def choose_schedule():
+    print("\nChoose Schedule")
+    print("----------------")
+    print("1. Today's Games")
+    print("2. Yesterday's Games")
+    print("3. Tomorrow's Games")
+    print("4. Single Custom Date")
+    print("5. Date Range")
+
+    choice = input("\nSelection: ").strip()
+
+    try:
+        if choice == "1":
+            return get_todays_games()
+
+        if choice == "2":
+            return get_yesterdays_games()
+
+        if choice == "3":
+            return get_tomorrows_games()
+
+        if choice == "4":
+            selected_date = input(
+                "\nEnter date (YYYY-MM-DD): "
+            ).strip()
+
+            return get_games(selected_date)
+
+        if choice == "5":
+            start_date = input(
+                "\nEnter start date (YYYY-MM-DD): "
+            ).strip()
+
+            end_date = input(
+                "Enter end date (YYYY-MM-DD): "
+            ).strip()
+
+            return get_games_in_range(
+                start_date,
+                end_date,
+            )
+
+    except ValueError as error:
+        print(f"\nDate error: {error}")
+        return []
+
+    except Exception as error:
+        print(f"\nCould not load schedule: {error}")
+        return []
+
+    print("\nInvalid choice.")
+    return []
+
+
+def run_prediction_for_game(
+    game,
+    n_sims=1000,
+    print_steps=True,
+):
     if print_steps:
-        print(f"\nPredicting: {game['away']} @ {game['home']}")
+        print(
+            f"\nPredicting: "
+            f"{game['away']} @ {game['home']}"
+        )
+
+        step("Getting lineups")
 
     lineups = get_game_lineups(
         game["game_id"],
@@ -48,11 +146,28 @@ def run_prediction_for_game(game, n_sims=1000, print_steps=True):
         home_team_id=game["home_id"],
     )
 
-    away_status = get_team_roster_status(game["away_id"])
-    home_status = get_team_roster_status(game["home_id"])
+    if print_steps:
+        step("Checking injuries")
+
+    away_status = get_team_roster_status(
+        game["away_id"]
+    )
+    home_status = get_team_roster_status(
+        game["home_id"]
+    )
+
+    if print_steps:
+        step("Getting weather")
 
     weather = get_weather_for_game(game)
+
+    if print_steps:
+        step("Getting park factors")
+
     park = get_park_factor(game["venue"])
+
+    if print_steps:
+        step("Calculating data quality")
 
     quality = calculate_data_quality_score(
         game=game,
@@ -63,15 +178,25 @@ def run_prediction_for_game(game, n_sims=1000, print_steps=True):
         park=park,
     )
 
-    model, model_columns, model_status = load_pa_model()
+    if print_steps:
+        step("Loading model")
+
+    model, model_columns, model_status = (
+        load_pa_model()
+    )
 
     if print_steps:
         if model_status == "loaded":
             print("✓ PA model loaded")
         else:
-            print(f"⚠ Model issue: {model_status}")
+            print(
+                f"⚠ Model issue: "
+                f"{model_status}"
+            )
 
-    sim = run_model_game_simulation(
+        step("Running simulation")
+
+    simulation = run_model_game_simulation(
         game=game,
         lineups=lineups,
         park=park,
@@ -79,14 +204,33 @@ def run_prediction_for_game(game, n_sims=1000, print_steps=True):
         n_sims=n_sims,
     )
 
-    if sim is None:
-        sim = run_basic_game_simulation(
+    if simulation is None:
+        simulation = run_basic_game_simulation(
             game=game,
             lineups=lineups,
             park=park,
             weather=weather,
             n_sims=n_sims,
         )
+
+    if print_steps:
+        step("Adding recent team form")
+
+    home_form = get_recent_team_form(
+        game["home_id"]
+    )
+    away_form = get_recent_team_form(
+        game["away_id"]
+    )
+
+    simulation["home_team_name"] = game["home"]
+    simulation["away_team_name"] = game["away"]
+
+    simulation = blend_projection(
+        simulation=simulation,
+        home_form=home_form,
+        away_form=away_form,
+    )
 
     report = build_game_report(
         game=game,
@@ -96,7 +240,7 @@ def run_prediction_for_game(game, n_sims=1000, print_steps=True):
         weather=weather,
         park=park,
         quality=quality,
-        simulation=sim,
+        simulation=simulation,
     )
 
     return {
@@ -105,109 +249,303 @@ def run_prediction_for_game(game, n_sims=1000, print_steps=True):
         "weather": weather,
         "park": park,
         "quality": quality,
-        "simulation": sim,
+        "simulation": simulation,
         "report": report,
+        "home_form": home_form,
+        "away_form": away_form,
     }
 
 
 def predict_all_games():
-    games = get_todays_games()
+    games = choose_schedule()
 
     if not games:
         print("\nNo games found.")
         input("\nPress Enter to return...")
         return
 
-    print("\nPredicting all today's games...")
+    print("\nPredicting all selected games...")
     print("--------------------------------")
 
     results = []
+    total_games = len(games)
 
-    for game in games:
+    for game_number, game in enumerate(
+        games,
+        start=1,
+    ):
         try:
+            progress_bar(
+                game_number - 1,
+                total_games,
+                label="Predicting games",
+            )
+
+            game_date = game.get(
+                "schedule_date",
+                "Unknown date",
+            )
+
+            print(
+                f"\nCurrent: {game_date} | "
+                f"{game['away']} @ {game['home']}"
+            )
+
             result = run_prediction_for_game(
                 game=game,
                 n_sims=1000,
-                print_steps=True,
+                print_steps=False,
             )
+
             results.append(result)
-        except Exception as e:
-            print(f"Error predicting {game['away']} @ {game['home']}: {e}")
+
+            progress_bar(
+                game_number,
+                total_games,
+                label="Predicting games",
+            )
+
+        except Exception as error:
+            print(
+                f"\nError predicting "
+                f"{game['away']} @ "
+                f"{game['home']}: {error}"
+            )
+
+    progress_bar(
+        total_games,
+        total_games,
+        label="Predicting games",
+    )
 
     print("\n")
-    print("════════════════════════════════════════════════════════════════════════════════════")
-    print("TODAY'S MLB PREDICTIONS")
-    print("════════════════════════════════════════════════════════════════════════════════════")
+    print(
+        "════════════════════════════════════════"
+        "════════════════════════════════════════"
+    )
+    print("MLB PREDICTIONS")
+    print(
+        "════════════════════════════════════════"
+        "════════════════════════════════════════"
+    )
     print()
 
     for result in results:
         game = result["game"]
-        sim = result["simulation"]
+        simulation = result["simulation"]
         weather = result["weather"]
         quality = result["quality"]
 
-        away_prob = sim["away_win_probability"]
-        home_prob = sim["home_win_probability"]
+        away_probability = simulation[
+            "away_win_probability"
+        ]
+        home_probability = simulation[
+            "home_win_probability"
+        ]
 
-        away_line = moneyline(away_prob)
-        home_line = moneyline(home_prob)
+        away_line = moneyline(
+            away_probability
+        )
+        home_line = moneyline(
+            home_probability
+        )
 
-        print("────────────────────────────────────────────────────────────────────────────────")
-        print(f"{game['away']} @ {game['home']}")
-        print(f"Status: {game.get('status', 'Unknown')}")
-        print(f"Venue: {game.get('venue', 'Unknown')}")
-        print()
-        print(f"Predicted Winner: {sim['winner']}")
-        print(f"{game['away']} Win %: {away_prob * 100:.1f}% | Fair Line: {away_line}")
-        print(f"{game['home']} Win %: {home_prob * 100:.1f}% | Fair Line: {home_line}")
-        print()
-        print(f"Projected Score: {game['away']} {sim['projected_away_score']} - {game['home']} {sim['projected_home_score']}")
-        print(f"Projected Total: {sim['projected_total']}")
-        print()
-        print(f"Weather: {weather.get('temp_f')}°F, wind {weather.get('wind_mph')} mph {weather.get('wind_direction')}")
-        print(f"Data Quality: {quality['score']}/100")
-        print(f"Engine: {sim.get('engine', 'Basic Simulator')}")
+        print(
+            "────────────────────────────────────────"
+            "────────────────────────────────────────"
+        )
+
+        print(
+            f"Date: "
+            f"{game.get('schedule_date', 'Unknown')}"
+        )
+        print(
+            f"{game['away']} @ {game['home']}"
+        )
+        print(
+            f"Status: "
+            f"{game.get('status', 'Unknown')}"
+        )
+        print(
+            f"Venue: "
+            f"{game.get('venue', 'Unknown')}"
+        )
         print()
 
-    full_report = build_all_games_report(results)
-    path = save_all_games_report(full_report)
+        print(
+            f"Predicted Winner: "
+            f"{simulation['winner']}"
+        )
 
-    print("════════════════════════════════════════════════════════════════════════════════════")
-    print(f"Saved all-games report: {path}")
-    print("════════════════════════════════════════════════════════════════════════════════════")
+        print(
+            f"{game['away']} Win %: "
+            f"{away_probability * 100:.1f}% | "
+            f"Fair Line: {away_line}"
+        )
+
+        print(
+            f"{game['home']} Win %: "
+            f"{home_probability * 100:.1f}% | "
+            f"Fair Line: {home_line}"
+        )
+
+        print()
+
+        print(
+            f"Projected Score: "
+            f"{game['away']} "
+            f"{simulation['projected_away_score']} - "
+            f"{game['home']} "
+            f"{simulation['projected_home_score']}"
+        )
+
+        print(
+            f"Projected Total: "
+            f"{simulation['projected_total']}"
+        )
+
+        print()
+
+        print(
+            f"Weather: "
+            f"{weather.get('temp_f')}°F, "
+            f"wind "
+            f"{weather.get('wind_mph')} mph "
+            f"{weather.get('wind_direction')}"
+        )
+
+        print(
+            f"Data Quality: "
+            f"{quality['score']}/100"
+        )
+
+        print(
+            f"Engine: "
+            f"{simulation.get(
+                'engine',
+                'Basic Simulator'
+            )}"
+        )
+
+        print()
+
+    full_report = build_all_games_report(
+        results
+    )
+
+    path = save_all_games_report(
+        full_report
+    )
+
+    print(
+        "════════════════════════════════════════"
+        "════════════════════════════════════════"
+    )
+    print(
+        f"Saved all-games report: {path}"
+    )
+    print(
+        "════════════════════════════════════════"
+        "════════════════════════════════════════"
+    )
 
     input("\nPress Enter to return...")
 
 
 def build_all_games_report(results):
     text = ""
-    text += "TODAY'S MLB PREDICTIONS\n"
-    text += "=======================\n\n"
+    text += "MLB PREDICTIONS\n"
+    text += "===============\n\n"
 
     for result in results:
         game = result["game"]
-        sim = result["simulation"]
+        simulation = result["simulation"]
         weather = result["weather"]
         quality = result["quality"]
 
-        away_prob = sim["away_win_probability"]
-        home_prob = sim["home_win_probability"]
+        away_probability = simulation[
+            "away_win_probability"
+        ]
+        home_probability = simulation[
+            "home_win_probability"
+        ]
 
-        text += "--------------------------------------------------\n"
-        text += f"{game['away']} @ {game['home']}\n"
-        text += f"Status: {game.get('status', 'Unknown')}\n"
-        text += f"Venue: {game.get('venue', 'Unknown')}\n\n"
+        text += (
+            "--------------------------------------------------\n"
+        )
 
-        text += f"Predicted Winner: {sim['winner']}\n"
-        text += f"{game['away']} Win %: {away_prob * 100:.1f}% | Fair Line: {moneyline(away_prob)}\n"
-        text += f"{game['home']} Win %: {home_prob * 100:.1f}% | Fair Line: {moneyline(home_prob)}\n\n"
+        text += (
+            f"Date: "
+            f"{game.get('schedule_date', 'Unknown')}\n"
+        )
 
-        text += f"Projected Score: {game['away']} {sim['projected_away_score']} - {game['home']} {sim['projected_home_score']}\n"
-        text += f"Projected Total: {sim['projected_total']}\n\n"
+        text += (
+            f"{game['away']} @ "
+            f"{game['home']}\n"
+        )
 
-        text += f"Weather: {weather.get('temp_f')}°F, wind {weather.get('wind_mph')} mph {weather.get('wind_direction')}\n"
-        text += f"Data Quality: {quality['score']}/100\n"
-        text += f"Engine: {sim.get('engine', 'Basic Simulator')}\n\n"
+        text += (
+            f"Status: "
+            f"{game.get('status', 'Unknown')}\n"
+        )
+
+        text += (
+            f"Venue: "
+            f"{game.get('venue', 'Unknown')}\n\n"
+        )
+
+        text += (
+            f"Predicted Winner: "
+            f"{simulation['winner']}\n"
+        )
+
+        text += (
+            f"{game['away']} Win %: "
+            f"{away_probability * 100:.1f}% | "
+            f"Fair Line: "
+            f"{moneyline(away_probability)}\n"
+        )
+
+        text += (
+            f"{game['home']} Win %: "
+            f"{home_probability * 100:.1f}% | "
+            f"Fair Line: "
+            f"{moneyline(home_probability)}\n\n"
+        )
+
+        text += (
+            f"Projected Score: "
+            f"{game['away']} "
+            f"{simulation['projected_away_score']} - "
+            f"{game['home']} "
+            f"{simulation['projected_home_score']}\n"
+        )
+
+        text += (
+            f"Projected Total: "
+            f"{simulation['projected_total']}\n\n"
+        )
+
+        text += (
+            f"Weather: "
+            f"{weather.get('temp_f')}°F, "
+            f"wind "
+            f"{weather.get('wind_mph')} mph "
+            f"{weather.get('wind_direction')}\n"
+        )
+
+        text += (
+            f"Data Quality: "
+            f"{quality['score']}/100\n"
+        )
+
+        text += (
+            f"Engine: "
+            f"{simulation.get(
+                'engine',
+                'Basic Simulator'
+            )}\n\n"
+        )
 
     return text
 
@@ -217,53 +555,87 @@ def save_all_games_report(report):
 
     Path("outputs").mkdir(exist_ok=True)
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    path = Path("outputs") / f"all_games_predictions_{timestamp}.txt"
+    timestamp = datetime.now().strftime(
+        "%Y%m%d_%H%M%S"
+    )
 
-    path.write_text(report, encoding="utf-8")
+    path = (
+        Path("outputs")
+        / f"all_games_predictions_{timestamp}.txt"
+    )
+
+    path.write_text(
+        report,
+        encoding="utf-8",
+    )
 
     return path
 
 
-def show_todays_games():
-    games = get_todays_games()
-
-    print("\nToday's MLB Games")
-    print("------------------")
-
-    if not games:
-        print("No games found.")
-        return []
-
-    for i, game in enumerate(games, start=1):
-        print(f"{i}. {game['away']} @ {game['home']}")
-        print(f"   Pitchers: {game['away_pitcher']} vs {game['home_pitcher']}")
-        print(f"   Stadium: {game['venue']}")
-        print(f"   Status: {game['status']}")
-        print(f"   Game ID: {game['game_id']}")
-        print()
-
-    return games
-
-
 def predict_one_game():
-    games = show_todays_games()
+    games = choose_schedule()
 
     if not games:
         input("\nPress Enter to return...")
         return
 
-    choice = input("Select a game number or press Enter to go back: ")
+    print("\nGames")
+    print("-----")
+
+    for game_number, game in enumerate(
+        games,
+        start=1,
+    ):
+        print(
+            f"{game_number}. "
+            f"{game.get('schedule_date', 'Unknown')} | "
+            f"{game['away']} @ {game['home']}"
+        )
+
+        print(
+            f"   Pitchers: "
+            f"{game['away_pitcher']} vs "
+            f"{game['home_pitcher']}"
+        )
+
+        print(
+            f"   Stadium: "
+            f"{game['venue']}"
+        )
+
+        print(
+            f"   Status: "
+            f"{game['status']}"
+        )
+
+        print(
+            f"   Game ID: "
+            f"{game['game_id']}"
+        )
+
+        print()
+
+    choice = input(
+        "Select a game number "
+        "or press Enter to go back: "
+    ).strip()
 
     if choice == "":
         return
 
-    if not choice.isdigit() or not (1 <= int(choice) <= len(games)):
+    if not choice.isdigit():
         print("Invalid choice.")
         input("\nPress Enter to return...")
         return
 
-    game = games[int(choice) - 1]
+    selected_number = int(choice)
+
+    if not 1 <= selected_number <= len(games):
+        print("Invalid choice.")
+        input("\nPress Enter to return...")
+        return
+
+    game = games[selected_number - 1]
 
     result = run_prediction_for_game(
         game=game,
@@ -273,7 +645,11 @@ def predict_one_game():
 
     print(result["report"])
 
-    path = save_game_report(game, result["report"])
+    path = save_game_report(
+        game,
+        result["report"],
+    )
+
     print(f"\nSaved report: {path}")
 
     input("\nPress Enter to return to menu...")
@@ -282,14 +658,29 @@ def predict_one_game():
 def custom_matchup():
     print("\nCustom Matchup")
     print("--------------")
-    print("Custom matchup still uses the basic simulator for now.")
+    print(
+        "Custom matchup still uses "
+        "the basic simulator for now."
+    )
 
     away = input("Away team: ").strip()
     home = input("Home team: ").strip()
-    stadium = input("Stadium name: ").strip()
-    temp = input("Temperature F: ").strip()
-    wind = input("Wind MPH: ").strip()
-    direction = input("Wind direction out/in/cross/none: ").strip().lower()
+    stadium = input(
+        "Stadium name: "
+    ).strip()
+
+    temp = input(
+        "Temperature F: "
+    ).strip()
+
+    wind = input(
+        "Wind MPH: "
+    ).strip()
+
+    direction = input(
+        "Wind direction "
+        "out/in/cross/none: "
+    ).strip().lower()
 
     game = {
         "away": away,
@@ -300,6 +691,7 @@ def custom_matchup():
         "home_pitcher_id": None,
         "venue": stadium,
         "game_id": "custom",
+        "schedule_date": "custom",
         "game_time": "custom",
         "status": "custom",
     }
@@ -317,7 +709,9 @@ def custom_matchup():
     weather = {
         "temp_f": float(temp or 72),
         "wind_mph": float(wind or 0),
-        "wind_direction": direction or "none",
+        "wind_direction": (
+            direction or "none"
+        ),
         "humidity": "unknown",
         "source": "manual",
     }
@@ -333,7 +727,7 @@ def custom_matchup():
         park=park,
     )
 
-    sim = run_basic_game_simulation(
+    simulation = run_basic_game_simulation(
         game=game,
         lineups=lineups,
         park=park,
@@ -349,19 +743,26 @@ def custom_matchup():
         weather=weather,
         park=park,
         quality=quality,
-        simulation=sim,
+        simulation=simulation,
     )
 
     print(report)
 
-    path = save_game_report(game, report)
+    path = save_game_report(
+        game,
+        report,
+    )
+
     print(f"\nSaved report: {path}")
 
     input("\nPress Enter to return...")
 
 
 def view_saved_results():
-    files = sorted(Path("outputs").glob("*.txt"), reverse=True)
+    files = sorted(
+        Path("outputs").glob("*.txt"),
+        reverse=True,
+    )
 
     print("\nSaved Reports")
     print("-------------")
@@ -371,28 +772,61 @@ def view_saved_results():
         input("\nPress Enter to return...")
         return
 
-    for i, file in enumerate(files[:20], start=1):
-        print(f"{i}. {file.name}")
+    visible_files = files[:20]
 
-    choice = input("\nOpen report number or press Enter to return: ")
+    for file_number, file in enumerate(
+        visible_files,
+        start=1,
+    ):
+        print(
+            f"{file_number}. {file.name}"
+        )
+
+    choice = input(
+        "\nOpen report number "
+        "or press Enter to return: "
+    ).strip()
 
     if choice == "":
         return
 
-    if choice.isdigit() and 1 <= int(choice) <= len(files[:20]):
-        selected = files[int(choice) - 1]
-        print("\n" + selected.read_text(encoding="utf-8"))
+    if choice.isdigit():
+        selected_number = int(choice)
+
+        if 1 <= selected_number <= len(
+            visible_files
+        ):
+            selected_file = visible_files[
+                selected_number - 1
+            ]
+
+            print(
+                "\n"
+                + selected_file.read_text(
+                    encoding="utf-8"
+                )
+            )
 
     input("\nPress Enter to return...")
 
 
 def train_models_menu():
-    from src.models.train_pa_model import train_pa_model
+    from src.models.train_pa_model import (
+        train_pa_model,
+    )
 
     print("\nTrain Plate Appearance Model")
     print("----------------------------")
-    start = input("Start date YYYY-MM-DD, default 2024-06-01: ").strip()
-    end = input("End date YYYY-MM-DD, default 2024-06-30: ").strip()
+
+    start = input(
+        "Start date YYYY-MM-DD, "
+        "default 2024-06-01: "
+    ).strip()
+
+    end = input(
+        "End date YYYY-MM-DD, "
+        "default 2024-06-30: "
+    ).strip()
 
     if start == "":
         start = "2024-06-01"
@@ -400,7 +834,10 @@ def train_models_menu():
     if end == "":
         end = "2024-06-30"
 
-    train_pa_model(start, end)
+    train_pa_model(
+        start,
+        end,
+    )
 
     input("\nPress Enter to return...")
 
@@ -409,7 +846,9 @@ def run_menu():
     while True:
         print_header()
 
-        choice = input("\nSelect option: ").strip()
+        choice = input(
+            "\nSelect option: "
+        ).strip()
 
         if choice == "1":
             predict_all_games()

@@ -1,0 +1,147 @@
+MLB PREDICTIONS
+===============
+
+--------------------------------------------------
+Kansas City Royals @ Tampa Bay Rays
+Status: Final
+Venue: Tropicana Field
+
+Predicted Winner: Kansas City Royals
+Kansas City Royals Win %: 50.7% | Fair Line: -103
+Tampa Bay Rays Win %: 49.3% | Fair Line: 103
+
+Projected Score: Kansas City Royals 6.35 - Tampa Bay Rays 6.15
+Projected Total: 12.51
+
+Weather: 84.4°F, wind 3.3 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Seattle Mariners @ Pittsburgh Pirates
+Status: Final
+Venue: PNC Park
+
+Predicted Winner: Pittsburgh Pirates
+Seattle Mariners Win %: 45.5% | Fair Line: 120
+Pittsburgh Pirates Win %: 54.5% | Fair Line: -120
+
+Projected Score: Seattle Mariners 5.8 - Pittsburgh Pirates 6.49
+Projected Total: 12.29
+
+Weather: 80.6°F, wind 2.1 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Athletics @ San Francisco Giants
+Status: Final
+Venue: Oracle Park
+
+Predicted Winner: San Francisco Giants
+Athletics Win %: 48.5% | Fair Line: 106
+San Francisco Giants Win %: 51.5% | Fair Line: -106
+
+Projected Score: Athletics 6.44 - San Francisco Giants 6.44
+Projected Total: 12.88
+
+Weather: 63.8°F, wind 12.2 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Houston Astros @ Detroit Tigers
+Status: Final
+Venue: Comerica Park
+
+Predicted Winner: Houston Astros
+Houston Astros Win %: 50.3% | Fair Line: -101
+Detroit Tigers Win %: 49.7% | Fair Line: 101
+
+Projected Score: Houston Astros 6.11 - Detroit Tigers 6.17
+Projected Total: 12.28
+
+Weather: 74.8°F, wind 7.2 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Philadelphia Phillies @ Washington Nationals
+Status: Final
+Venue: Nationals Park
+
+Predicted Winner: Washington Nationals
+Philadelphia Phillies Win %: 46.6% | Fair Line: 115
+Washington Nationals Win %: 53.4% | Fair Line: -115
+
+Projected Score: Philadelphia Phillies 6.07 - Washington Nationals 6.53
+Projected Total: 12.6
+
+Weather: 81.6°F, wind 1.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Texas Rangers @ Toronto Blue Jays
+Status: Final
+Venue: Rogers Centre
+
+Predicted Winner: Texas Rangers
+Texas Rangers Win %: 52.1% | Fair Line: -109
+Toronto Blue Jays Win %: 47.9% | Fair Line: 109
+
+Projected Score: Texas Rangers 6.24 - Toronto Blue Jays 6.02
+Projected Total: 12.26
+
+Weather: 72.0°F, wind 12.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Chicago Cubs @ New York Mets
+Status: Final
+Venue: Citi Field
+
+Predicted Winner: Chicago Cubs
+Chicago Cubs Win %: 77.5% | Fair Line: -344
+New York Mets Win %: 22.5% | Fair Line: 344
+
+Projected Score: Chicago Cubs 6.53 - New York Mets 3.42
+Projected Total: 9.95
+
+Weather: 66.1°F, wind 8.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+New York Yankees @ Boston Red Sox
+Status: Final
+Venue: Fenway Park
+
+Predicted Winner: Boston Red Sox
+New York Yankees Win %: 46.8% | Fair Line: 114
+Boston Red Sox Win %: 53.2% | Fair Line: -114
+
+Projected Score: New York Yankees 6.09 - Boston Red Sox 6.47
+Projected Total: 12.56
+
+Weather: 67.8°F, wind 5.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Arizona Diamondbacks @ St. Louis Cardinals
+Status: Postponed
+Venue: Busch Stadium
+
+Predicted Winner: St. Louis Cardinals
+Arizona Diamondbacks Win %: 46.2% | Fair Line: 116
+St. Louis Cardinals Win %: 53.8% | Fair Line: -116
+
+Projected Score: Arizona Diamondbacks 6.05 - St. Louis Cardinals 6.46
+Projected Total: 12.51
+
+Weather: 83.4°F, wind 8.0 mph unknown
+Data Quality: 75/100
+Engine: Statcast PA model with calibrated cached matchups
+

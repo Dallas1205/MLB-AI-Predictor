@@ -1,0 +1,85 @@
+
+════════════════════════════════════════
+MLB AI Predictor Report
+════════════════════════════════════════
+
+Game
+-------------------------
+ @ 
+Game Time: custom
+Venue: 
+Status: custom
+
+Pitchers
+-------------------------
+Away: Manual/TBD
+Home: Manual/TBD
+
+Prediction
+-------------------------
+Winner: 
+Away Win Probability: 48.3%
+Home Win Probability: 51.7%
+Projected Score:  1.22 -  1.28
+Projected Total: 2.51
+Prediction Engine: Basic Simulator
+
+Fair Betting Lines
+------------------
+: -107
+: 107
+
+Weather
+-------------------------
+Temp: 72.0 F
+Wind: 0.0 mph none
+Source: manual
+
+Park Factor
+-------------------------
+Run Factor: 1.0
+Source: manual starter table
+
+Lineup Status
+-------------------------
+manual / not confirmed
+
+ Lineup
+Official lineup not posted yet.
+
+ Lineup
+Official lineup not posted yet.
+
+Injury / Status Notes
+-------------------------
+No injury/status notes found from roster endpoint.
+
+Data Quality
+-------------------------
+Score: 65/100
+- Lineups are not fully confirmed
+- Using neutral/default park factor
+- Away roster status unavailable
+- Home roster status unavailable
+
+Prediction Confidence
+---------------------
+Score: 65/100
+Grade: D
+
+Why score is lower:
+- Lineups are not fully confirmed
+- Using neutral/default park factor
+- Away roster status unavailable
+- Home roster status unavailable
+
+
+Why This Prediction Happened
+----------------------------
+-  is favored by the simulation.
+- Home starter confirmed: Manual/TBD.
+- Away starter confirmed: Manual/TBD.
+- Stadium is close to neutral.
+- Weather data is included.
+- Data quality issues reduce confidence.
+

@@ -1,0 +1,243 @@
+MLB PREDICTIONS
+===============
+
+--------------------------------------------------
+Washington Nationals @ Baltimore Orioles
+Status: Final
+Venue: Oriole Park at Camden Yards
+
+Predicted Winner: Baltimore Orioles
+Washington Nationals Win %: 45.9% | Fair Line: 118
+Baltimore Orioles Win %: 54.1% | Fair Line: -118
+
+Projected Score: Washington Nationals 6.39 - Baltimore Orioles 6.78
+Projected Total: 13.18
+
+Weather: 76.2°F, wind 9.6 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Cincinnati Reds @ Pittsburgh Pirates
+Status: Final
+Venue: PNC Park
+
+Predicted Winner: Pittsburgh Pirates
+Cincinnati Reds Win %: 49.9% | Fair Line: 100
+Pittsburgh Pirates Win %: 50.1% | Fair Line: -100
+
+Projected Score: Cincinnati Reds 6.59 - Pittsburgh Pirates 6.57
+Projected Total: 13.15
+
+Weather: 80.6°F, wind 2.1 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Texas Rangers @ Toronto Blue Jays
+Status: Final
+Venue: Rogers Centre
+
+Predicted Winner: Texas Rangers
+Texas Rangers Win %: 52.9% | Fair Line: -112
+Toronto Blue Jays Win %: 47.1% | Fair Line: 112
+
+Projected Score: Texas Rangers 6.16 - Toronto Blue Jays 5.83
+Projected Total: 12.0
+
+Weather: 72.0°F, wind 12.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Houston Astros @ Detroit Tigers
+Status: Final
+Venue: Comerica Park
+
+Predicted Winner: Detroit Tigers
+Houston Astros Win %: 47.4% | Fair Line: 111
+Detroit Tigers Win %: 52.6% | Fair Line: -111
+
+Projected Score: Houston Astros 5.84 - Detroit Tigers 6.19
+Projected Total: 12.03
+
+Weather: 74.8°F, wind 7.2 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Seattle Mariners @ Cleveland Guardians
+Status: Final
+Venue: Progressive Field
+
+Predicted Winner: Cleveland Guardians
+Seattle Mariners Win %: 44.9% | Fair Line: 123
+Cleveland Guardians Win %: 55.1% | Fair Line: -123
+
+Projected Score: Seattle Mariners 5.88 - Cleveland Guardians 6.48
+Projected Total: 12.36
+
+Weather: 74.0°F, wind 8.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Arizona Diamondbacks @ Tampa Bay Rays
+Status: Final
+Venue: Tropicana Field
+
+Predicted Winner: Arizona Diamondbacks
+Arizona Diamondbacks Win %: 50.9% | Fair Line: -104
+Tampa Bay Rays Win %: 49.1% | Fair Line: 104
+
+Projected Score: Arizona Diamondbacks 6.03 - Tampa Bay Rays 6.0
+Projected Total: 12.03
+
+Weather: 84.4°F, wind 3.3 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Philadelphia Phillies @ New York Mets
+Status: Final
+Venue: Citi Field
+
+Predicted Winner: Philadelphia Phillies
+Philadelphia Phillies Win %: 52.7% | Fair Line: -111
+New York Mets Win %: 47.3% | Fair Line: 111
+
+Projected Score: Philadelphia Phillies 6.06 - New York Mets 5.72
+Projected Total: 11.78
+
+Weather: 66.1°F, wind 8.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Colorado Rockies @ Minnesota Twins
+Status: Final
+Venue: Target Field
+
+Predicted Winner: Colorado Rockies
+Colorado Rockies Win %: 52.2% | Fair Line: -109
+Minnesota Twins Win %: 47.8% | Fair Line: 109
+
+Projected Score: Colorado Rockies 6.62 - Minnesota Twins 6.48
+Projected Total: 13.1
+
+Weather: 85.4°F, wind 7.6 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Kansas City Royals @ Chicago White Sox
+Status: Final
+Venue: Rate Field
+
+Predicted Winner: Chicago White Sox
+Kansas City Royals Win %: 42.5% | Fair Line: 135
+Chicago White Sox Win %: 57.5% | Fair Line: -135
+
+Projected Score: Kansas City Royals 5.75 - Chicago White Sox 6.58
+Projected Total: 12.34
+
+Weather: 72°F, wind 0 mph none
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Chicago Cubs @ Milwaukee Brewers
+Status: Final
+Venue: American Family Field
+
+Predicted Winner: Milwaukee Brewers
+Chicago Cubs Win %: 48.8% | Fair Line: 105
+Milwaukee Brewers Win %: 51.2% | Fair Line: -105
+
+Projected Score: Chicago Cubs 6.7 - Milwaukee Brewers 6.66
+Projected Total: 13.36
+
+Weather: 75.8°F, wind 5.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Miami Marlins @ St. Louis Cardinals
+Status: Final
+Venue: Busch Stadium
+
+Predicted Winner: St. Louis Cardinals
+Miami Marlins Win %: 43.5% | Fair Line: 130
+St. Louis Cardinals Win %: 56.5% | Fair Line: -130
+
+Projected Score: Miami Marlins 5.9 - St. Louis Cardinals 6.77
+Projected Total: 12.67
+
+Weather: 83.4°F, wind 8.0 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Athletics @ Los Angeles Angels
+Status: Final
+Venue: Angel Stadium
+
+Predicted Winner: Athletics
+Athletics Win %: 52.0% | Fair Line: -108
+Los Angeles Angels Win %: 48.0% | Fair Line: 108
+
+Projected Score: Athletics 6.39 - Los Angeles Angels 6.22
+Projected Total: 12.61
+
+Weather: 83.0°F, wind 8.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Atlanta Braves @ San Francisco Giants
+Status: Final
+Venue: Oracle Park
+
+Predicted Winner: San Francisco Giants
+Atlanta Braves Win %: 47.5% | Fair Line: 111
+San Francisco Giants Win %: 52.5% | Fair Line: -111
+
+Projected Score: Atlanta Braves 5.93 - San Francisco Giants 6.04
+Projected Total: 11.97
+
+Weather: 63.8°F, wind 12.2 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Los Angeles Dodgers @ San Diego Padres
+Status: Final
+Venue: Petco Park
+
+Predicted Winner: San Diego Padres
+Los Angeles Dodgers Win %: 31.3% | Fair Line: 219
+San Diego Padres Win %: 68.7% | Fair Line: -219
+
+Projected Score: Los Angeles Dodgers 3.37 - San Diego Padres 5.4
+Projected Total: 8.77
+
+Weather: 73.9°F, wind 8.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+New York Yankees @ Boston Red Sox
+Status: Final
+Venue: Fenway Park
+
+Predicted Winner: Boston Red Sox
+New York Yankees Win %: 48.3% | Fair Line: 107
+Boston Red Sox Win %: 51.7% | Fair Line: -107
+
+Projected Score: New York Yankees 6.34 - Boston Red Sox 6.59
+Projected Total: 12.93
+
+Weather: 67.8°F, wind 5.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+

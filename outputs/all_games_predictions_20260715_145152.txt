@@ -1,0 +1,530 @@
+MLB PREDICTIONS
+===============
+
+--------------------------------------------------
+Date: 2026-07-11
+Milwaukee Brewers @ Pittsburgh Pirates
+Status: Final
+Venue: PNC Park
+
+Predicted Winner: Pittsburgh Pirates
+Milwaukee Brewers Win %: 48.4% | Fair Line: 107
+Pittsburgh Pirates Win %: 51.6% | Fair Line: -107
+
+Projected Score: Milwaukee Brewers 3.46 - Pittsburgh Pirates 3.48
+Projected Total: 6.94
+
+Weather: 85.9°F, wind 6.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Milwaukee Brewers @ Pittsburgh Pirates
+Status: Final
+Venue: PNC Park
+
+Predicted Winner: Pittsburgh Pirates
+Milwaukee Brewers Win %: 49.4% | Fair Line: 102
+Pittsburgh Pirates Win %: 50.6% | Fair Line: -102
+
+Projected Score: Milwaukee Brewers 3.63 - Pittsburgh Pirates 3.65
+Projected Total: 7.28
+
+Weather: 85.9°F, wind 6.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Los Angeles Angels @ Minnesota Twins
+Status: Final
+Venue: Target Field
+
+Predicted Winner: Los Angeles Angels
+Los Angeles Angels Win %: 50.0% | Fair Line: -100
+Minnesota Twins Win %: 50.0% | Fair Line: -100
+
+Projected Score: Los Angeles Angels 3.55 - Minnesota Twins 3.5
+Projected Total: 7.05
+
+Weather: 91.3°F, wind 9.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Athletics @ Chicago White Sox
+Status: Final
+Venue: Rate Field
+
+Predicted Winner: Chicago White Sox
+Athletics Win %: 47.5% | Fair Line: 111
+Chicago White Sox Win %: 52.5% | Fair Line: -111
+
+Projected Score: Athletics 3.45 - Chicago White Sox 3.45
+Projected Total: 6.91
+
+Weather: 72°F, wind 0 mph none
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Colorado Rockies @ San Francisco Giants
+Status: Final
+Venue: Oracle Park
+
+Predicted Winner: Colorado Rockies
+Colorado Rockies Win %: 51.5% | Fair Line: -106
+San Francisco Giants Win %: 48.5% | Fair Line: 106
+
+Projected Score: Colorado Rockies 3.34 - San Francisco Giants 3.34
+Projected Total: 6.69
+
+Weather: 78.6°F, wind 16.2 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+New York Yankees @ Washington Nationals
+Status: Final
+Venue: Nationals Park
+
+Predicted Winner: Washington Nationals
+New York Yankees Win %: 49.3% | Fair Line: 103
+Washington Nationals Win %: 50.7% | Fair Line: -103
+
+Projected Score: New York Yankees 3.55 - Washington Nationals 3.58
+Projected Total: 7.13
+
+Weather: 87.8°F, wind 6.7 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Boston Red Sox @ New York Mets
+Status: Final
+Venue: Citi Field
+
+Predicted Winner: Boston Red Sox
+Boston Red Sox Win %: 51.4% | Fair Line: -106
+New York Mets Win %: 48.6% | Fair Line: 106
+
+Projected Score: Boston Red Sox 3.57 - New York Mets 3.6
+Projected Total: 7.17
+
+Weather: 91.1°F, wind 13.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Seattle Mariners @ Tampa Bay Rays
+Status: Final
+Venue: Tropicana Field
+
+Predicted Winner: Seattle Mariners
+Seattle Mariners Win %: 50.8% | Fair Line: -103
+Tampa Bay Rays Win %: 49.2% | Fair Line: 103
+
+Projected Score: Seattle Mariners 3.73 - Tampa Bay Rays 3.56
+Projected Total: 7.29
+
+Weather: 87.5°F, wind 7.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Cleveland Guardians @ Miami Marlins
+Status: Final
+Venue: loanDepot park
+
+Predicted Winner: Miami Marlins
+Cleveland Guardians Win %: 48.9% | Fair Line: 104
+Miami Marlins Win %: 51.1% | Fair Line: -104
+
+Projected Score: Cleveland Guardians 3.57 - Miami Marlins 3.54
+Projected Total: 7.11
+
+Weather: 86.9°F, wind 6.3 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Philadelphia Phillies @ Detroit Tigers
+Status: Final
+Venue: Comerica Park
+
+Predicted Winner: Detroit Tigers
+Philadelphia Phillies Win %: 49.4% | Fair Line: 102
+Detroit Tigers Win %: 50.6% | Fair Line: -102
+
+Projected Score: Philadelphia Phillies 3.25 - Detroit Tigers 3.23
+Projected Total: 6.48
+
+Weather: 90.3°F, wind 10.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Kansas City Royals @ Baltimore Orioles
+Status: Final
+Venue: Oriole Park at Camden Yards
+
+Predicted Winner: Baltimore Orioles
+Kansas City Royals Win %: 48.5% | Fair Line: 106
+Baltimore Orioles Win %: 51.5% | Fair Line: -106
+
+Projected Score: Kansas City Royals 3.74 - Baltimore Orioles 3.59
+Projected Total: 7.34
+
+Weather: 89.2°F, wind 3.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Houston Astros @ Texas Rangers
+Status: Final
+Venue: Globe Life Field
+
+Predicted Winner: Texas Rangers
+Houston Astros Win %: 49.3% | Fair Line: 103
+Texas Rangers Win %: 50.7% | Fair Line: -103
+
+Projected Score: Houston Astros 3.55 - Texas Rangers 3.5
+Projected Total: 7.05
+
+Weather: 82.7°F, wind 11.6 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Chicago Cubs @ Cincinnati Reds
+Status: Final
+Venue: Great American Ball Park
+
+Predicted Winner: Chicago Cubs
+Chicago Cubs Win %: 52.1% | Fair Line: -109
+Cincinnati Reds Win %: 47.9% | Fair Line: 109
+
+Projected Score: Chicago Cubs 3.93 - Cincinnati Reds 3.87
+Projected Total: 7.81
+
+Weather: 87.2°F, wind 4.3 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Atlanta Braves @ St. Louis Cardinals
+Status: Final
+Venue: Busch Stadium
+
+Predicted Winner: Atlanta Braves
+Atlanta Braves Win %: 50.7% | Fair Line: -103
+St. Louis Cardinals Win %: 49.3% | Fair Line: 103
+
+Projected Score: Atlanta Braves 3.56 - St. Louis Cardinals 3.52
+Projected Total: 7.08
+
+Weather: 88.6°F, wind 6.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Toronto Blue Jays @ San Diego Padres
+Status: Final
+Venue: Petco Park
+
+Predicted Winner: Toronto Blue Jays
+Toronto Blue Jays Win %: 51.2% | Fair Line: -105
+San Diego Padres Win %: 48.8% | Fair Line: 105
+
+Projected Score: Toronto Blue Jays 3.38 - San Diego Padres 3.42
+Projected Total: 6.8
+
+Weather: 80.7°F, wind 7.0 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-11
+Arizona Diamondbacks @ Los Angeles Dodgers
+Status: Final
+Venue: UNIQLO Field at Dodger Stadium
+
+Predicted Winner: Arizona Diamondbacks
+Arizona Diamondbacks Win %: 50.6% | Fair Line: -102
+Los Angeles Dodgers Win %: 49.4% | Fair Line: 102
+
+Projected Score: Arizona Diamondbacks 3.41 - Los Angeles Dodgers 3.39
+Projected Total: 6.8
+
+Weather: 72°F, wind 0 mph none
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Milwaukee Brewers @ Pittsburgh Pirates
+Status: Final
+Venue: PNC Park
+
+Predicted Winner: Pittsburgh Pirates
+Milwaukee Brewers Win %: 49.6% | Fair Line: 102
+Pittsburgh Pirates Win %: 50.4% | Fair Line: -102
+
+Projected Score: Milwaukee Brewers 3.52 - Pittsburgh Pirates 3.54
+Projected Total: 7.06
+
+Weather: 85.9°F, wind 6.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Kansas City Royals @ Baltimore Orioles
+Status: Final
+Venue: Oriole Park at Camden Yards
+
+Predicted Winner: Baltimore Orioles
+Kansas City Royals Win %: 47.2% | Fair Line: 112
+Baltimore Orioles Win %: 52.8% | Fair Line: -112
+
+Projected Score: Kansas City Royals 3.55 - Baltimore Orioles 3.78
+Projected Total: 7.33
+
+Weather: 89.2°F, wind 3.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+New York Yankees @ Washington Nationals
+Status: Final
+Venue: Nationals Park
+
+Predicted Winner: Washington Nationals
+New York Yankees Win %: 49.6% | Fair Line: 102
+Washington Nationals Win %: 50.4% | Fair Line: -102
+
+Projected Score: New York Yankees 3.53 - Washington Nationals 3.5
+Projected Total: 7.03
+
+Weather: 87.8°F, wind 6.7 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Chicago Cubs @ Cincinnati Reds
+Status: Final
+Venue: Great American Ball Park
+
+Predicted Winner: Chicago Cubs
+Chicago Cubs Win %: 51.0% | Fair Line: -104
+Cincinnati Reds Win %: 49.0% | Fair Line: 104
+
+Projected Score: Chicago Cubs 3.83 - Cincinnati Reds 3.75
+Projected Total: 7.58
+
+Weather: 87.2°F, wind 4.3 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Boston Red Sox @ New York Mets
+Status: Final
+Venue: Citi Field
+
+Predicted Winner: Boston Red Sox
+Boston Red Sox Win %: 51.7% | Fair Line: -107
+New York Mets Win %: 48.3% | Fair Line: 107
+
+Projected Score: Boston Red Sox 3.63 - New York Mets 3.49
+Projected Total: 7.12
+
+Weather: 91.1°F, wind 13.5 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Seattle Mariners @ Tampa Bay Rays
+Status: Final
+Venue: Tropicana Field
+
+Predicted Winner: Tampa Bay Rays
+Seattle Mariners Win %: 47.9% | Fair Line: 109
+Tampa Bay Rays Win %: 52.1% | Fair Line: -109
+
+Projected Score: Seattle Mariners 3.51 - Tampa Bay Rays 3.68
+Projected Total: 7.19
+
+Weather: 87.5°F, wind 7.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Philadelphia Phillies @ Detroit Tigers
+Status: Final
+Venue: Comerica Park
+
+Predicted Winner: Detroit Tigers
+Philadelphia Phillies Win %: 48.1% | Fair Line: 108
+Detroit Tigers Win %: 51.9% | Fair Line: -108
+
+Projected Score: Philadelphia Phillies 3.25 - Detroit Tigers 3.26
+Projected Total: 6.51
+
+Weather: 90.3°F, wind 10.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Cleveland Guardians @ Miami Marlins
+Status: Final
+Venue: loanDepot park
+
+Predicted Winner: Miami Marlins
+Cleveland Guardians Win %: 50.0% | Fair Line: -100
+Miami Marlins Win %: 50.0% | Fair Line: -100
+
+Projected Score: Cleveland Guardians 3.62 - Miami Marlins 3.45
+Projected Total: 7.07
+
+Weather: 86.9°F, wind 6.3 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Los Angeles Angels @ Minnesota Twins
+Status: Final
+Venue: Target Field
+
+Predicted Winner: Minnesota Twins
+Los Angeles Angels Win %: 47.6% | Fair Line: 110
+Minnesota Twins Win %: 52.4% | Fair Line: -110
+
+Projected Score: Los Angeles Angels 3.42 - Minnesota Twins 3.52
+Projected Total: 6.94
+
+Weather: 91.3°F, wind 9.4 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Athletics @ Chicago White Sox
+Status: Final
+Venue: Rate Field
+
+Predicted Winner: Chicago White Sox
+Athletics Win %: 46.0% | Fair Line: 117
+Chicago White Sox Win %: 54.0% | Fair Line: -117
+
+Projected Score: Athletics 3.4 - Chicago White Sox 3.48
+Projected Total: 6.88
+
+Weather: 72°F, wind 0 mph none
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Atlanta Braves @ St. Louis Cardinals
+Status: Final
+Venue: Busch Stadium
+
+Predicted Winner: Atlanta Braves
+Atlanta Braves Win %: 50.1% | Fair Line: -100
+St. Louis Cardinals Win %: 49.9% | Fair Line: 100
+
+Projected Score: Atlanta Braves 3.6 - St. Louis Cardinals 3.55
+Projected Total: 7.15
+
+Weather: 88.6°F, wind 6.8 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Houston Astros @ Texas Rangers
+Status: Final
+Venue: Globe Life Field
+
+Predicted Winner: Texas Rangers
+Houston Astros Win %: 48.9% | Fair Line: 104
+Texas Rangers Win %: 51.1% | Fair Line: -104
+
+Projected Score: Houston Astros 3.46 - Texas Rangers 3.65
+Projected Total: 7.12
+
+Weather: 82.7°F, wind 11.6 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Colorado Rockies @ San Francisco Giants
+Status: Final
+Venue: Oracle Park
+
+Predicted Winner: Colorado Rockies
+Colorado Rockies Win %: 50.3% | Fair Line: -101
+San Francisco Giants Win %: 49.7% | Fair Line: 101
+
+Projected Score: Colorado Rockies 3.24 - San Francisco Giants 3.36
+Projected Total: 6.6
+
+Weather: 78.6°F, wind 16.2 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Arizona Diamondbacks @ Los Angeles Dodgers
+Status: Final
+Venue: UNIQLO Field at Dodger Stadium
+
+Predicted Winner: Los Angeles Dodgers
+Arizona Diamondbacks Win %: 49.8% | Fair Line: 101
+Los Angeles Dodgers Win %: 50.2% | Fair Line: -101
+
+Projected Score: Arizona Diamondbacks 3.37 - Los Angeles Dodgers 3.51
+Projected Total: 6.87
+
+Weather: 72°F, wind 0 mph none
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
+--------------------------------------------------
+Date: 2026-07-12
+Toronto Blue Jays @ San Diego Padres
+Status: Final
+Venue: Petco Park
+
+Predicted Winner: Toronto Blue Jays
+Toronto Blue Jays Win %: 50.6% | Fair Line: -102
+San Diego Padres Win %: 49.4% | Fair Line: 102
+
+Projected Score: Toronto Blue Jays 3.37 - San Diego Padres 3.43
+Projected Total: 6.8
+
+Weather: 80.7°F, wind 7.0 mph unknown
+Data Quality: 100/100
+Engine: Statcast PA model with calibrated cached matchups
+
